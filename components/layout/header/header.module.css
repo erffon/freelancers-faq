@@ -1,0 +1,6 @@
+.container {
+  @apply flex justify-between align-middle;
+}
+.ul {
+  @apply flex align-middle;
+}
