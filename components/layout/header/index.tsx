@@ -18,7 +18,7 @@ const Header: React.FC<IHeader> = ({ className = "" }) => {
           height={80}
         />
       </div>
-      <ul className={`${style["ul"]}`}>
+      <ul className={`${style["ul"]} text-sm font-light`}>
         {HEADER_DATA.english.headerLinks.map((item) => {
           return (
             <Link href={item.link}>
