@@ -3,9 +3,13 @@ import { HEADER_DATA } from "../../../contents/layout/header/headerData";
 import Link from "next/link";
 import style from "./header.module.css";
 
-const Header = () => {
+interface IHeader {
+  className?: string;
+}
+
+const Header: React.FC<IHeader> = ({ className = "" }) => {
   return (
-    <header className={`_container ${style["container"]}`}>
+    <header className={`_container ${style["container"]} ${className}`}>
       <div>
         <Image
           src={HEADER_DATA.english.logoImage}
@@ -27,7 +31,9 @@ const Header = () => {
       </ul>
       <Link href={HEADER_DATA.english.ctaButton.link}>
         {" "}
-        <button>{HEADER_DATA.english.ctaButton.title}</button>
+        <button className={style.cta}>
+          {HEADER_DATA.english.ctaButton.title}
+        </button>
       </Link>
     </header>
   );
