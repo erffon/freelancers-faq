@@ -1,17 +1,17 @@
-
+import ROUTES from "@/constants/routes";
 
 export const HEADER_DATA = {
   english: {
     headerLinks: [
-      { title: "Home", link: "/" },
-      { title: "Questions", link: "/questions" },
-      { title: "About", link: "/about" },
-      { title: "Add New", link: "/add-new" },
+      { title: "Home", link: ROUTES.HOME },
+      { title: "Questions", link: ROUTES.QUESTIONS },
+      { title: "About", link: ROUTES.ABOUT },
+      { title: "Add New", link: ROUTES.ADD_NEW_QUESTION },
     ],
-    ctaButton:{
-        title:'Join Community',
-        link:
-    }
+    ctaButton: {
+      title: "Join Community",
+      link: ROUTES.COMMUNITY,
+    },
   },
   persian: {},
 };
