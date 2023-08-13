@@ -1,6 +1,9 @@
 .container {
-  @apply flex justify-between align-middle;
+  @apply flex justify-between items-center py-3 bg-bg-darker-gray;
 }
 .ul {
-  @apply flex align-middle;
+  @apply flex items-center gap-8;
+}
+.li {
+  @apply px-3 py-2 hover:border hover:border-black hover:rounded-2xl transition-shadow duration-300 ease-out border border-black/0 hover:shadow-md;
 }
