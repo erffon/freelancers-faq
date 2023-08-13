@@ -1,0 +1,13 @@
+.section1-slogan {
+  @apply text-center pt-[4.46rem] pb-20;
+}
+.section1-pretitle,
+.section1-posttitle {
+  @apply text-textcolor-heading font-normal text-[54px];
+}
+.section1-midtitle {
+  @apply text-[64px] text-transparent bg-clip-text bg-gradient-to-r from-gradcolor-orange to-gradcolor-red font-extrabold;
+}
+.section1-caption {
+  @apply text-center text-textcolor-paragraph font-light text-sm w-[36rem] pt-[3.1rem] mx-auto;
+}
