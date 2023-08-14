@@ -1,5 +1,5 @@
-import Layout from "@/components/layout";
-import { HOME_DATA } from "@/contents/pages/home";
+import Layout from "@cmp/layout";
+import { HOME_DATA } from "@contents/pages/home";
 import style from "./Home.module.css";
 
 export default function Home() {
@@ -22,6 +22,7 @@ export default function Home() {
           {HOME_DATA.english.section1.caption}
         </p>
       </div>
+      <div></div>
     </Layout>
   );
 }
