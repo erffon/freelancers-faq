@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { ComponentType, FC, HTMLAttributeAnchorTarget } from "react";
+import { ComponentType, FC, HTMLAttributeAnchorTarget, ReactNode } from "react";
+import { IconType } from "react-icons";
 
 interface IQuestionCards {
-  Icon: ComponentType;
+  Icon: IconType;
   title: string;
   summary: string;
   link: string;
@@ -19,7 +20,7 @@ const QuestionCards: FC<IQuestionCards> = ({
   return (
     <Link href={link} target={target}>
       <div>
-        <Icon />
+        <Icon className="text-red-500" />
       </div>
       <div>
         <h3>{title}</h3>
