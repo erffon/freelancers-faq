@@ -19,8 +19,8 @@ const QuestionCards: FC<IQuestionCards> = ({
 }) => {
   return (
     <Link href={link} target={target}>
-      <div>
-        <Icon className="text-red-500" />
+      <div className="bg-white rounded-2xl flex p-4 justify-center items-center w-fit">
+        <Icon className="text-black/70 w-5 h-5" />
       </div>
       <div>
         <h3>{title}</h3>
