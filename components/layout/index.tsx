@@ -11,6 +11,7 @@ interface ILayout {
   children: ReactNode;
   pageTitle: string;
   pageDesc: string;
+  className?: string;
 }
 
 const Layout: React.FC<ILayout> = ({
@@ -19,6 +20,7 @@ const Layout: React.FC<ILayout> = ({
   children,
   pageTitle,
   pageDesc,
+  className = "",
 }) => {
   return (
     <>
@@ -31,7 +33,9 @@ const Layout: React.FC<ILayout> = ({
         <meta charSet="UTF-8" />
       </Head>
       {hasHeader && <Header className={inter.className} />}
-      <main className={`${inter.className} _container`}>{children}</main>
+      <main className={`${inter.className} _container ${className}`}>
+        {children}
+      </main>
       {hasFooter && <Footer />}
     </>
   );

@@ -14,5 +14,6 @@ body {
   margin: 0;
 }
 ._container {
-  padding: 0 7.5rem;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
 }
