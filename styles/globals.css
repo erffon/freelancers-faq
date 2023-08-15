@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html {
+html {
   font-size: 16px;
-} */
+  scroll-behavior: smooth !important;
+}
 
+html,
 body {
   background-color: #f7f7f9;
+  padding: 0;
+  margin: 0;
 }
 ._container {
   padding: 0 7.5rem;

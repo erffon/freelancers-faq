@@ -5,8 +5,8 @@
   @apply flex items-center gap-8;
 }
 .li {
-  @apply px-3 py-2 hover:border hover:border-black hover:rounded-2xl transition-shadow duration-300 ease-out border border-black/0 hover:shadow-md;
+  @apply px-3 py-2 hover:border hover:border-black hover:rounded-2xl transition-shadow duration-300 ease-out border border-black/0 hover:shadow-md text-base;
 }
 .cta {
-  @apply text-sm font-medium bg-gradient-to-r from-gradcolor-orange to-gradcolor-red text-white px-3 py-2 hover:border hover:border-black rounded-2xl border border-black/0 hover:shadow-md transition-shadow duration-300 ease-out;
+  @apply text-base font-medium bg-gradient-to-r from-gradcolor-orange to-gradcolor-red text-white px-3 py-2 hover:border hover:border-black rounded-2xl border border-black/0 hover:shadow-md transition-shadow duration-300 ease-out;
 }

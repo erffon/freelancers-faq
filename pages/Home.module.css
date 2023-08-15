@@ -3,11 +3,11 @@
 }
 .section1-pretitle,
 .section1-posttitle {
-  @apply text-textcolor-heading font-normal text-[54px];
+  @apply text-textcolor-heading font-normal text-6xl;
 }
 .section1-midtitle {
-  @apply text-[64px] text-transparent bg-clip-text bg-gradient-to-r from-gradcolor-orange to-gradcolor-red font-extrabold;
+  @apply text-[4rem] text-transparent bg-clip-text bg-gradient-to-r from-gradcolor-orange to-gradcolor-red font-extrabold;
 }
 .section1-caption {
-  @apply text-center text-textcolor-paragraph font-light text-sm w-[36rem] pt-[3.1rem] mx-auto;
+  @apply text-center text-textcolor-paragraph font-light text-base w-[37rem] pt-[3.1rem] mx-auto;
 }
