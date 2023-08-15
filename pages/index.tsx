@@ -24,7 +24,7 @@ export default function Home() {
         </h2>
         <p className={style["section1-caption"]}>{English_Sec1.caption}</p>
       </div>
-      <div>
+      <div className="grid grid-cols-2 gap-7">
         {QUESTIONS_DATA_ENGLISH.map((item) => {
           return <QuestionCards link={""} {...item} />;
         })}

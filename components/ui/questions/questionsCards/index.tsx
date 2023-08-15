@@ -18,13 +18,17 @@ const QuestionCards: FC<IQuestionCards> = ({
   target = "_self",
 }) => {
   return (
-    <Link href={link} target={target}>
-      <div className="bg-white rounded-2xl flex p-4 justify-center items-center w-fit">
-        <Icon className="text-black/70 w-5 h-5" />
+    <Link href={link} target={target} className="flex items-start gap-8">
+      <div className="bg-white rounded-2xl flex p-4 justify-center items-center w-fit hover:shadow-md transition-all duration-300 ease-out">
+        <Icon className="text-black/60 w-7 h-7" />
       </div>
       <div>
-        <h3>{title}</h3>
-        <p>{summary}</p>
+        <h3 className="font-semibold text-lg text-textcolor-heading">
+          {title}
+        </h3>
+        <p className="font-light text-textcolor-paragraph leading-[130%]">
+          {summary}
+        </p>
       </div>
     </Link>
   );
