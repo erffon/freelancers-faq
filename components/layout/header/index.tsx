@@ -10,7 +10,7 @@ interface IHeader {
 const Header: React.FC<IHeader> = ({ className = "" }) => {
   return (
     <header className={`_container ${style["container"]} ${className}`}>
-      <Link href="/">
+      <Link href="/" className="hover:opacity-70">
         <Image
           src={HEADER_DATA.english.logoImage}
           alt={"Iran's logo"}

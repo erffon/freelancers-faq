@@ -30,7 +30,7 @@ export default function Home() {
         {QUESTIONS_DATA_ENGLISH.map((item) => {
           return <QuestionCards link={""} {...item} />;
         })}
-        <span className="absolute bottom-0 w-full h-40 bg-gradient-to-t from-bgcolor-gray-light to-transparent z-10" />
+        <span className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-bgcolor-gray-light to-transparent z-10" />
       </div>
       <div className="flex items-center justify-center">
         <Link href={English_Sec1.button.link}>

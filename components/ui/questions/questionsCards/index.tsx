@@ -19,8 +19,8 @@ const QuestionCards: FC<IQuestionCards> = ({
 }) => {
   return (
     <Link href={link} target={target} className="flex items-start gap-8">
-      <div className="bg-white rounded-2xl flex p-4 justify-center items-center w-fit hover:shadow-md transition-all duration-300 ease-out">
-        <Icon className="text-black/60 w-7 h-7" />
+      <div className="bg-white rounded-2xl flex p-3 justify-center items-center w-fit hover:shadow-md transition-all duration-300 ease-out">
+        <Icon className="text-black/60 w-6 h-6" />
       </div>
       <div>
         <h3 className="font-semibold text-lg text-textcolor-heading">
