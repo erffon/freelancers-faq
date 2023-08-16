@@ -20,6 +20,15 @@ export const HOME_DATA = {
         link: ROUTES.QUESTIONS,
       },
     },
+    section2: {
+      cta_box: {
+        images: [],
+        texts: {
+          title: "",
+          caption: "",
+        },
+      },
+    },
   },
   persian: {},
 };

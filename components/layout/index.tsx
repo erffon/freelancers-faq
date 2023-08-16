@@ -33,9 +33,7 @@ const Layout: React.FC<ILayout> = ({
         <meta charSet="UTF-8" />
       </Head>
       {hasHeader && <Header className={inter.className} />}
-      <main className={`${inter.className} _container ${className}`}>
-        {children}
-      </main>
+      <main className={`${inter.className} ${className}`}>{children}</main>
       {hasFooter && <Footer />}
     </>
   );
