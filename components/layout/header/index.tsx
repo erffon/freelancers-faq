@@ -22,10 +22,8 @@ const Header: React.FC<IHeader> = ({ className = "" }) => {
       <ul className={`${style["ul"]} text-sm font-light`}>
         {HEADER_DATA.english.headerLinks.map((item) => {
           return (
-            <Link href={item.link}>
-              <li key={item.title} className={style["li"]}>
-                {item.title}
-              </li>
+            <Link href={item.link} key={item.title}>
+              <li className={style["li"]}>{item.title}</li>
             </Link>
           );
         })}
