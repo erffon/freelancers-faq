@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 gap-7 relative">
           {QUESTIONS_DATA_ENGLISH.map((item) => {
-            return <QuestionCards link={""} {...item} />;
+            return <QuestionCards link={""} {...item} key={item.title} />;
           })}
           <span className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-bgcolor-gray-light to-transparent z-10" />
         </div>
