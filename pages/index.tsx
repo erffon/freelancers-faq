@@ -5,6 +5,7 @@ import { HOME_DATA } from "@contents/pages/home";
 import style from "./Home.module.css";
 import Link from "next/link";
 import ROUTES from "@/constants/routes";
+import Image from "next/image";
 
 const English_Sec1 = HOME_DATA.english.section1;
 const English_Sec2 = HOME_DATA.english.section1;
@@ -43,12 +44,18 @@ export default function Home() {
         </div>
       </section>
       <section className="pt-20 pb-60 bg-bgcolor-gray-darker _container">
-        <div>
+        <div className="border border-textcolor-paragraph px-5 py-4 rounded-2xl">
+          <div className="flex">
+            {HOME_DATA.english.section2.cta_box.images.map((src) => {
+              return (
+                <Image key={src} src={src} alt={src} width={66} height={66} />
+              );
+            })}
+          </div>
           <div></div>
-          <div></div>
-          <Link href={ROUTES.COMMUNITY}>
-            <button></button>
-          </Link>
+          <button>
+            <Link href={ROUTES.COMMUNITY}></Link>
+          </button>
         </div>
       </section>
     </Layout>

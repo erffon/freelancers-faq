@@ -1,4 +1,5 @@
 import ROUTES from "@/constants/routes";
+import { BiLogoTelegram } from "react-icons/bi";
 
 export const HOME_DATA = {
   english: {
@@ -22,10 +23,16 @@ export const HOME_DATA = {
     },
     section2: {
       cta_box: {
-        images: [],
+        images: [
+          "/assets/images/homepage/memoji1.png",
+          "/assets/images/homepage/memoji2.png",
+          "/assets/images/homepage/memoji3.png",
+        ],
         texts: {
-          title: "",
-          caption: "",
+          title: "Still have questions?",
+          caption:
+            "Can’t find the answer you’re looking for? join our friendly community on Telegram",
+          icon: BiLogoTelegram,
         },
       },
     },

@@ -17,7 +17,8 @@
     "paths": {
       "@/*": ["./*"],
       "@cmp/*": ["./components/*"],
-      "@contents/*": ["./contents/*"]
+      "@contents/*": ["./contents/*"],
+      "@assets/*": ["/assets/*"]
     },
     "noImplicitAny": true
   },
