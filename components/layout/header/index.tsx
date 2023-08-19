@@ -30,9 +30,7 @@ const Header: React.FC<IHeader> = ({ className = "" }) => {
       </ul>
       <Link href={HEADER_DATA.english.ctaButton.link}>
         {" "}
-        <button className={style.cta}>
-          {HEADER_DATA.english.ctaButton.title}
-        </button>
+        <button className={`cta`}>{HEADER_DATA.english.ctaButton.title}</button>
       </Link>
     </header>
   );

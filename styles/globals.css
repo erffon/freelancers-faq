@@ -19,3 +19,9 @@ body {
   padding-left: 7.5rem;
   padding-right: 7.5rem;
 }
+
+@layer components {
+  .cta {
+    @apply text-base font-medium bg-gradient-to-r from-gradcolor-orange to-gradcolor-red text-white px-3 py-2 hover:border-black rounded-2xl border border-transparent hover:shadow-md duration-300 ease-out;
+  }
+}

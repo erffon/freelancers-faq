@@ -44,19 +44,54 @@ export default function Home() {
         </div>
       </section>
       <section className="pt-20 pb-60 bg-bgcolor-gray-darker _container">
-        <div className="border border-textcolor-paragraph px-5 py-4 rounded-2xl">
+        <div className="border border-textcolor-paragraph px-5 py-4 rounded-2xl flex items-center justify-between">
           <div className="flex">
-            {HOME_DATA.english.section2.cta_box.images.map((src) => {
+            {HOME_DATA.english.section2.cta_box.images.map((src, index) => {
+              let zIndex;
+              switch (index) {
+                case 0:
+                  zIndex = "z-20";
+                  break;
+                case 1:
+                  zIndex = "z-10";
+                  break;
+                case 2:
+                  zIndex = "z-0";
+                  break;
+              }
+
               return (
-                <Image key={src} src={src} alt={src} width={66} height={66} />
+                <Image
+                  key={src}
+                  src={src}
+                  alt={src}
+                  width={66}
+                  height={66}
+                  className={`${
+                    index !== 0 ? "-ml-8" : ""
+                  } ${zIndex} border-2 shadow-md border-white rounded-full`}
+                />
               );
             })}
           </div>
-          <div></div>
-          <button>
-            <Link href={ROUTES.COMMUNITY}></Link>
+          <div>
+            <h3 className="text-textcolor-heading font-semibold text-lg">
+              {HOME_DATA.english.section2.cta_box.texts.title}
+            </h3>
+            <div className="flex items-center gap-3">
+              <p className="text-textcolor-paragraph  font-light text-base">
+                {HOME_DATA.english.section2.cta_box.texts.caption}
+              </p>
+              <HOME_DATA.english.section2.cta_box.texts.icon className="w-6 h-6 opacity-60" />
+            </div>
+          </div>
+          <button className="cta">
+            <Link href={HOME_DATA.english.section2.cta_box.ctaButton.link}>
+              {HOME_DATA.english.section2.cta_box.ctaButton.title}
+            </Link>
           </button>
         </div>
+        <p>errrrs</p>
       </section>
     </Layout>
   );

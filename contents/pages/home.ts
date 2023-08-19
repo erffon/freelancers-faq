@@ -24,15 +24,19 @@ export const HOME_DATA = {
     section2: {
       cta_box: {
         images: [
-          "/assets/images/homepage/memoji1.png",
-          "/assets/images/homepage/memoji2.png",
-          "/assets/images/homepage/memoji3.png",
+          "/assets/images/homepage/memoj1.jpg",
+          "/assets/images/homepage/memoj2.jpg",
+          "/assets/images/homepage/memoj3.jpg",
         ],
         texts: {
           title: "Still have questions?",
           caption:
             "Can’t find the answer you’re looking for? join our friendly community on Telegram",
           icon: BiLogoTelegram,
+        },
+        ctaButton: {
+          title: "Join Community",
+          link: ROUTES.COMMUNITY,
         },
       },
     },
