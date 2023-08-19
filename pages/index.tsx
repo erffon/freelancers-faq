@@ -44,7 +44,7 @@ export default function Home() {
         </div>
       </section>
       <section className="pt-20 pb-60 bg-bgcolor-gray-darker _container">
-        <div className="border border-textcolor-paragraph px-5 py-4 rounded-2xl flex items-center justify-between">
+        <div className="border border-textcolor-paragraph px-5 py-4 rounded-2xl flex items-center justify-between mb-36">
           <div className="flex">
             {HOME_DATA.english.section2.cta_box.images.map((src, index) => {
               let zIndex;
@@ -74,12 +74,12 @@ export default function Home() {
               );
             })}
           </div>
-          <div>
+          <div className="gap-3">
             <h3 className="text-textcolor-heading font-semibold text-lg">
               {HOME_DATA.english.section2.cta_box.texts.title}
             </h3>
             <div className="flex items-center gap-3">
-              <p className="text-textcolor-paragraph  font-light text-base">
+              <p className="text-textcolor-heading  font-light text-base">
                 {HOME_DATA.english.section2.cta_box.texts.caption}
               </p>
               <HOME_DATA.english.section2.cta_box.texts.icon className="w-6 h-6 opacity-60" />
@@ -91,7 +91,22 @@ export default function Home() {
             </Link>
           </button>
         </div>
-        <p>errrrsf asd asdsss</p>
+        <div className="flex justify-between">
+          <div className="w-1/2">
+            <h2 className="text-textcolor-heading font-normal text-5xl text-left pb-5">
+              {HOME_DATA.english.section2.who_we_are.text.title}
+            </h2>
+            <p className="text-textcolor-paragraph font-light text-base text-left">
+              {HOME_DATA.english.section2.who_we_are.text.caption}
+            </p>
+          </div>
+          <Image
+            width={576}
+            height={384}
+            src={HOME_DATA.english.section2.who_we_are.image.src}
+            alt={"who we are"}
+          />
+        </div>
       </section>
     </Layout>
   );

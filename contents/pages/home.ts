@@ -39,6 +39,16 @@ export const HOME_DATA = {
           link: ROUTES.COMMUNITY,
         },
       },
+      who_we_are: {
+        text: {
+          title: "Who we are?",
+          caption:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur convallis diam, eget aliquam metus porttitor sed. Vestibulum placerat massa nec risus interdum, at tincidunt libero condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum consectetur, nunc eu aliquet maximus, tortor sem dapibus mi, ut rhoncus nisi dui sit amet tortor. Pellentesque sed mauris rhoncus, vulputate nibh facilisis, porta nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare sed sem at gravida. Aliquam vestibulum purus eget risus dapibus, ac suscipit justo aliquam. Phasellus sed consectetur sapien. Cras ultrices felis tortor, at porta ante fringilla ut. Phasellus in finibus justo. Curabitur pulvinar tellus at metus hendrerit, fermentum blandit sapien aliquam. Nulla dignissim hendrerit dui ac convallis.",
+        },
+        image: {
+          src: "/assets/images/homepage/team-banner.jpg",
+        },
+      },
     },
   },
   persian: {},
