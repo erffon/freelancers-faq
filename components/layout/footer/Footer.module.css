@@ -1,0 +1,15 @@
+.intro {
+  @apply text-base text-textcolor-paragraph font-light leading-[140%] w-3/5 pb-5;
+}
+.intro strong {
+  @apply font-bold;
+}
+.social {
+  @apply w-8 h-8 text-black/50 hover:text-black/80 transition duration-300 ease-out;
+}
+.links-title {
+  @apply text-textcolor-heading text-lg font-semibold mb-4;
+}
+.links-items {
+  @apply text-textcolor-paragraph hover:text-textcolor-heading text-base font-light mb-2;
+}
